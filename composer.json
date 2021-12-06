@@ -15,10 +15,10 @@
     }
   ],
   "require": {
-    "php": ">=7.4",
-    "jms/serializer": "^3.12",
+    "php": ">=8.0",
+    "jms/serializer": "^4.0",
     "ramsey/uuid": "^4.1",
-    "symfony/yaml": "^5.2"
+    "symfony/yaml": "5.4.*|6.*"
   },
   "autoload": {
     "psr-4": {
@@ -29,7 +29,7 @@
     "ext-xml": "for parsing xml"
   },
   "require-dev": {
-    "phpstan/phpstan": "^0.12",
+    "phpstan/phpstan": "^1.0",
     "nette/tester": "^2.0"
   }
 }
