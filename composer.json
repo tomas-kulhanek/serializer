@@ -1,35 +1,28 @@
 {
-  "name": "tomas-kulhanek/serializer",
-  "homepage": "https://tomaskulhanek.cz",
-  "description": "",
-  "keywords": [
-    "json",
-    "xml",
-    "binaryContent"
-  ],
-  "type": "library",
-  "authors": [
-    {
-      "name": "Tomas Kulhanek",
-      "homepage": "https://tomaskulhanek.cz"
-    }
-  ],
-  "require": {
-    "php": "^7.4|^8.0",
-    "jms/serializer": "^3.15",
-    "ramsey/uuid": "^4.1",
-    "symfony/yaml": "5.4.*|6.*"
-  },
-  "autoload": {
-    "psr-4": {
-      "TomasKulhanek\\Serializer\\": "src/"
-    }
-  },
-  "suggest": {
-    "ext-xml": "for parsing xml"
-  },
-  "require-dev": {
-    "phpstan/phpstan": "^1.0",
-    "nette/tester": "^2.0"
-  }
+	"name": "tomas-kulhanek/serializer",
+	"homepage": "https://tomaskulhanek.cz",
+	"description": "",
+	"keywords": [
+		"json",
+		"xml",
+		"binaryContent"
+	],
+	"type": "library",
+	"authors": [
+		{
+			"name": "Tomas Kulhanek",
+			"homepage": "https://tomaskulhanek.cz"
+		}
+	],
+	"require": {
+		"php": ">=8.1",
+		"jms/serializer": "^3.17",
+		"ramsey/uuid": "^4.3",
+		"symfony/yaml": "5.4.*|6.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"TomasKulhanek\\Serializer\\": "src/"
+		}
+	}
 }

@@ -8,7 +8,7 @@
 namespace TomasKulhanek\Serializer;
 
 
-use TomasKulhanek\Serializer\Handler\EnumSerializerHandler;
+use TomasKulhanek\Serializer\Handler\EnumHandler;
 use TomasKulhanek\Serializer\Handler\SplFileInfoHandler;
 use TomasKulhanek\Serializer\Handler\UuidSerializerHandler;
 use JMS\Serializer\Handler\HandlerRegistry;
@@ -28,7 +28,7 @@ class SerializerFactory
         $serializer->addDefaultHandlers()->configureHandlers(function (HandlerRegistry $registry) {
             $registry->registerSubscribingHandler(new SplFileInfoHandler());
             $registry->registerSubscribingHandler(new UuidSerializerHandler());
-            $registry->registerSubscribingHandler(new EnumSerializerHandler());
+            $registry->registerSubscribingHandler(new EnumHandler());
         });
         return $serializer->build();
     }
