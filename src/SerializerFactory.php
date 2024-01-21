@@ -27,8 +27,6 @@ class SerializerFactory
         );
         $serializer->addDefaultHandlers()->configureHandlers(function (HandlerRegistry $registry) {
             $registry->registerSubscribingHandler(new SplFileInfoHandler());
-            $registry->registerSubscribingHandler(new UuidSerializerHandler());
-            $registry->registerSubscribingHandler(new EnumHandler());
         });
         return $serializer->build();
     }

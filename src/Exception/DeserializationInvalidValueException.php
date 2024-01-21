@@ -1,10 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: tomas.kulhanek
- * Date: 16.10.2018
- * Time: 12:10
- */
+<?php declare(strict_types=1);
 
 namespace TomasKulhanek\Serializer\Exception;
 
