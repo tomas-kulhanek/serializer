@@ -1,15 +1,9 @@
 <?php declare(strict_types=1);
-/**
- * Created by PhpStorm.
- * User: tomas.kulhanek
- * Date: 16.10.2018
- * Time: 12:06
- */
 
-namespace HelpPC\Serializer\Tests;
+namespace TomasKulhanek\Serializer\Tests;
 
-use HelpPC\Serializer\SerializerFactory;
-use HelpPC\Serializer\Utils\SplFileInfo;
+use TomasKulhanek\Serializer\SerializerFactory;
+use TomasKulhanek\Serializer\Utils\SplFileInfo;
 use JMS\Serializer\Serializer;
 
 use Tester\{
